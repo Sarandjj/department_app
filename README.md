@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # dep_app
 
-A new Flutter project.
+department app
 
 ## Getting Started
 
