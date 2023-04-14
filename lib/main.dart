@@ -2,15 +2,15 @@
 
 import 'package:dep_app/auth/login_page.dart';
 import 'package:dep_app/helper/helper_function.dart';
-import 'package:dep_app/result_page.dart';
+import 'package:dep_app/page/result_page.dart';
 import 'package:flutter/material.dart';
 
-import 'home.dart';
-import 'stu.dart';
-import 'syllabus.dart';
-import 'fac_mem.dart';
-import 'time_table.dart';
-import 'about_dep.dart';
+import 'page/home.dart';
+import 'page/stu.dart';
+import 'page/syllabus.dart';
+import 'page/fac_mem.dart';
+import 'page/time_table.dart';
+import 'page/about_dep.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 Future<void> main() async {

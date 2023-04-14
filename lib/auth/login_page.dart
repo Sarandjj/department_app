@@ -1,6 +1,6 @@
 import 'package:dep_app/helper/helper_function.dart';
 import 'package:dep_app/auth/register_page.dart';
-import 'package:dep_app/home.dart';
+import 'package:dep_app/page/home.dart';
 import 'package:dep_app/service/auth_service.dart';
 import 'package:dep_app/service/database_service.dart';
 import 'package:dep_app/widgets/widgets.dart';

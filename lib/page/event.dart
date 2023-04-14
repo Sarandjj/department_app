@@ -10,8 +10,11 @@ class Event extends StatefulWidget {
 class _EventState extends State<Event> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: const Text('Events'),backgroundColor: const Color.fromARGB(255, 19, 3, 109),),
-    
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Events'),
+        backgroundColor: const Color.fromARGB(255, 19, 3, 109),
+      ),
     );
   }
 }

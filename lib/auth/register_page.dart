@@ -1,6 +1,6 @@
 import 'package:dep_app/helper/helper_function.dart';
 import 'package:dep_app/auth/login_page.dart';
-import 'package:dep_app/home.dart';
+import 'package:dep_app/page/home.dart';
 import 'package:dep_app/service/auth_service.dart';
 import 'package:dep_app/widgets/widgets.dart';
 import 'package:flutter/gestures.dart';

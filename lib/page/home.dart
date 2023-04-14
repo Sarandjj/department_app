@@ -1,12 +1,13 @@
 // ignore_for_file: unused_field, use_build_context_synchronously
 
-import 'package:dep_app/about_dep.dart';
+import 'package:dep_app/page/about_dep.dart';
 import 'package:dep_app/auth/login_page.dart';
-import 'package:dep_app/fac_mem.dart';
-import 'package:dep_app/result_page.dart';
-import 'package:dep_app/stu.dart';
-import 'package:dep_app/syllabus.dart';
-import 'package:dep_app/time_table.dart';
+import 'package:dep_app/page/event_add.dart';
+import 'package:dep_app/page/fac_mem.dart';
+import 'package:dep_app/page/result_page.dart';
+import 'package:dep_app/page/stu.dart';
+import 'package:dep_app/page/syllabus.dart';
+import 'package:dep_app/page/time_table.dart';
 import 'package:flutter/material.dart';
 import 'event.dart';
 
@@ -133,14 +134,19 @@ class _HomePageState extends State<HomePage> {
             //   size: 150,
             //   color: Colors.grey[700],
             // ),
-            const SizedBox(
+            Image.asset(
+              'images/srnmc_logo.png', // replace with your college logo image path
+              width: 100,
               height: 120,
+            ),
+            const SizedBox(
+              height: 10,
             ),
 
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Text(
-                userName,
+                "Name : $userName",
                 style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 7, 16, 97)),
@@ -149,7 +155,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Text(
-                registerno,
+                "Register No : $registerno",
                 style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 7, 16, 97)),
@@ -158,7 +164,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Text(
-                email,
+                "Email Id : $email",
                 style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 5, 21, 162)),
@@ -167,15 +173,12 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 30,
             ),
-            const Divider(
-              height: 20,
-            ),
+
             ListTile(
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const FacultyMembersPage()),
+                  MaterialPageRoute(builder: (context) => AddEventPage()),
                 );
               },
               selectedColor: Theme.of(context).primaryColor,

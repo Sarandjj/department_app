@@ -1,4 +1,3 @@
-
 // ignore_for_file: depend_on_referenced_packages, unnecessary_string_interpolations, use_build_context_synchronously, avoid_print
 
 import 'dart:io';
@@ -11,7 +10,8 @@ class PdfViewerScreen extends StatefulWidget {
   final String pdfFileName;
   final String pdfPathName;
 
-  const PdfViewerScreen({super.key, required this.pdfFileName, required this.pdfPathName});
+  const PdfViewerScreen(
+      {super.key, required this.pdfFileName, required this.pdfPathName});
 
   @override
   // ignore: library_private_types_in_public_api
@@ -58,7 +58,6 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
       }
     }
   }
-
 
   Future<void> _downloadPdf() async {
     final directory = await getExternalStorageDirectory();
