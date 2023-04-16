@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AddEventPage()),
+                  MaterialPageRoute(builder: (context) => FacultyMembersPage()),
                 );
               },
               selectedColor: Theme.of(context).primaryColor,
