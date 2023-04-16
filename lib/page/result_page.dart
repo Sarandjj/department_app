@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:dep_app/pdf_screen.dart';
 
@@ -27,7 +26,7 @@ class ResultPage extends StatelessWidget {
               child: TextField(
                 controller: _controller,
                 decoration: const InputDecoration(
-                  hintText: 'Enter your roll number',
+                  hintText: 'Enter your roll number (ex:UCS205045)',
                 ),
               ),
             ),
@@ -37,7 +36,8 @@ class ResultPage extends StatelessWidget {
                 final rollNum = _controller.text.trim().toUpperCase();
                 if (rollNum.isEmpty) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Please enter a valid roll number')),
+                    const SnackBar(
+                        content: Text('Please enter a valid roll number')),
                   );
                   return;
                 }
