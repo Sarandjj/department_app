@@ -30,7 +30,7 @@ To get started with the application, follow these steps:
 
 ## Screenshots
 
-![Home Page](screenshots/home.png "Home Page")
+![Home Page](screenshots/home1_page.png "Home Page")
 ![Faculty Member Detail](screenshots/faculty_detail.png "Faculty Member Detail")
 ![Time Table](screenshots/time_table.png "Time Table")
 ![Student Detail](screenshots/student_detail.png "Student Detail")
